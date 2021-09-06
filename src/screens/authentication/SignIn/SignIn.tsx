@@ -8,13 +8,13 @@ import {
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 
 import AuthLayout from '../AuthLayout';
-import {AuthenticationStackParamList} from '../../../utils/types';
+import {AuthenticationScreens} from '../../../utils/types';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
 import {utils} from '../../../utils';
 
 type SignInScreenProps = NativeStackScreenProps<
-  AuthenticationStackParamList,
+  AuthenticationScreens,
   'SignIn'
 >;
 const SignIn: React.FC<SignInScreenProps> = ({navigation}) => {
@@ -168,7 +168,7 @@ const SignIn: React.FC<SignInScreenProps> = ({navigation}) => {
             marginLeft: SIZES.radius,
             color: COLORS.white,
           }}
-          onPress={() => console.log('FB')}
+          onPress={() => navigation.navigate('Home')}
         />
 
         {/* Google */}

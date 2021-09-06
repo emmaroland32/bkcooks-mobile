@@ -2,7 +2,7 @@ import {Animated, View} from 'react-native';
 import {COLORS, SIZES} from '../../../../constants/theme';
 import {Detail, Footer, Header} from './components';
 
-import {AuthenticationStackParamList} from '../../../utils/types';
+import {AuthenticationScreens} from '../../../utils/types';
 import {FlatList} from 'react-native-gesture-handler';
 import Logo from './components/Logo';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
@@ -10,7 +10,7 @@ import React from 'react';
 import {constants} from '../../../../constants';
 
 type OnBoardingProps = NativeStackScreenProps<
-  AuthenticationStackParamList,
+  AuthenticationScreens,
   'OnBoarding'
 >;
 

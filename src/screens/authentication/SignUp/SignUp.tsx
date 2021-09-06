@@ -1,4 +1,4 @@
-import {AuthenticationStackParamList, utils} from '../../../utils';
+import {AuthenticationScreens, utils} from '../../../utils';
 import {COLORS, FONTS, SIZES, icons} from '../../../../constants';
 import {FormInput, TextButton, TextIconButton} from '../../../components';
 import {Image, Text, TouchableOpacity, View} from 'react-native';
@@ -7,10 +7,7 @@ import AuthLayout from '../AuthLayout';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
 
-type SignUpProps = NativeStackScreenProps<
-  AuthenticationStackParamList,
-  'SignUp'
->;
+type SignUpProps = NativeStackScreenProps<AuthenticationScreens, 'SignUp'>;
 
 const SignUp: React.FC<SignUpProps> = ({navigation}) => {
   const [email, setEmail] = React.useState('');

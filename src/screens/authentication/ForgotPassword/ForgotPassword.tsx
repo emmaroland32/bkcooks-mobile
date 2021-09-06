@@ -1,4 +1,4 @@
-import {AuthenticationStackParamList, utils} from '../../../utils';
+import {AuthenticationScreens, utils} from '../../../utils';
 import {COLORS, SIZES, icons} from '../../../../constants';
 import {FormInput, TextButton} from '../../../components';
 import {Image, View} from 'react-native';
@@ -8,7 +8,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import React from 'react';
 
 type ForgotPasswordProps = NativeStackScreenProps<
-  AuthenticationStackParamList,
+  AuthenticationScreens,
   'ForgotPassword'
 >;
 

@@ -2,13 +2,13 @@ import {COLORS, FONTS, SIZES} from '../../../../constants';
 import {Text, View} from 'react-native';
 
 import AuthLayout from '../AuthLayout';
-import {AuthenticationStackParamList} from '../../../utils';
+import {AuthenticationScreens} from '../../../utils';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import OTPInputView from '@twotalltotems/react-native-otp-input';
 import React from 'react';
 import {TextButton} from '../../../components';
 
-type OtpProps = NativeStackScreenProps<AuthenticationStackParamList, 'Otp'>;
+type OtpProps = NativeStackScreenProps<AuthenticationScreens, 'Otp'>;
 
 const Otp: React.FC<OtpProps> = ({navigation}) => {
   const [timer, setTimer] = React.useState(60);
@@ -95,7 +95,9 @@ const Otp: React.FC<OtpProps> = ({navigation}) => {
             borderRadius: SIZES.radius,
             backgroundColor: COLORS.primary,
           }}
-          onPress={() => console.log('Continue')}
+          onPress={() => {
+            console.log('Continue');
+          }}
         />
         <View
           style={{

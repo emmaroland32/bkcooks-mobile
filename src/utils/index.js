@@ -1,4 +1,5 @@
-import {AuthenticationStackParamList} from './types';
+import {AuthenticationScreens, DrawerScreens} from './types';
+
 import utils from './utils';
 
-export {utils, AuthenticationStackParamList};
+export {utils, AuthenticationScreens, DrawerScreens};
